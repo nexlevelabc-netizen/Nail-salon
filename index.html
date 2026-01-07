@@ -1,0 +1,1547 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KL Nails & Spa Benfleet - Premium nail salon in Essex offering exceptional nail care services. Book your appointment today at our Hadleigh location.">
+    <meta name="keywords" content="nail salon Essex, nail spa Benfleet, manicure Hadleigh, gel nails, acrylics, nail technician Essex">
+    <title>KL Nails & Spa Benfleet | Premium Nail Salon in Essex</title>
+    <style>
+        /* ===================================
+           CSS VARIABLES & RESET
+           =================================== */
+        :root {
+            --primary-color: #d4a574;
+            --primary-dark: #b8915f;
+            --primary-light: #e6c9a8;
+            --secondary-color: #2c2c2c;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --background: #ffffff;
+            --background-alt: #f8f8f8;
+            --background-dark: #2c2c2c;
+            --border-color: rgb(128, 128, 128);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-display: Georgia, 'Times New Roman', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 13px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        /* ===================================
+           TYPOGRAPHY
+           =================================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: clamp(3rem, 5vw, 5rem);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        h3 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .section-description {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* ===================================
+           LAYOUT
+           =================================== */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 0;
+            }
+        }
+
+        /* ===================================
+           BUTTONS
+           =================================== */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 0;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--background);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+        }
+
+        .btn-secondary:hover {
+            background: var(--background);
+            color: var(--text-primary);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--background);
+        }
+
+        .btn-nav {
+            background: var(--primary-color);
+            color: var(--background);
+            padding: 0.75rem 1.75rem;
+            border-radius: 0;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-nav:hover {
+            background: var(--primary-dark);
+        }
+
+        /* ===================================
+           HEADER & NAVIGATION
+           =================================== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 0 var(--border-color);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-sm);
+            background: var(--background);
+        }
+
+        .navigation {
+            padding: 1.5rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: var(--text-primary);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .nav-link {
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--text-primary);
+            position: relative;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 1px;
+            background: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--background);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transform: translateX(100%);
+                transition: var(--transition);
+            }
+
+            .nav-menu.active {
+                transform: translateX(0);
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+        }
+
+        /* ===================================
+           HERO SECTION - 100% CRYSTAL CLEAR
+           =================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('Images/salon-interior.png') center/cover no-repeat;
+            text-align: center;
+            padding: 10rem 0 6rem;
+        }
+
+        /* NO OVERLAY - Image stays completely sharp */
+        .hero::before,
+        .hero::after {
+            display: none;
+        }
+
+        .hero-overlay {
+            display: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: 17px;
+            margin-bottom: 3.5rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .hero-info {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.75rem 1.5rem;
+            border-radius: 2px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-item svg {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 80vh;
+                padding: 8rem 0 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-title,
+            .hero-subtitle {
+                padding: 0.75rem 1.5rem;
+            }
+        }
+
+        /* ===================================
+           INTRO SECTION
+           =================================== */
+        .intro-section {
+            background: var(--background);
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .intro-features {
+            display: grid;
+            gap: 1.25rem;
+            margin: 2.5rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .feature-item span {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .feature-item svg {
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .intro-image {
+            position: relative;
+        }
+
+        .image-placeholder {
+            aspect-ratio: 4/5;
+            background: var(--primary-light);
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rating-badge {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: 0;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .stars {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating-text {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 0.25rem;
+        }
+
+        .review-count {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        @media (max-width: 992px) {
+            .intro-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .intro-image {
+                order: -1;
+            }
+        }
+
+        /* ===================================
+           SERVICES PREVIEW
+           =================================== */
+        .services-preview {
+            background: var(--background-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: var(--background);
+            padding: 3rem 2.5rem;
+            border-radius: 0;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 0;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .service-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .section-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* ===================================
+           GALLERY SECTION
+           =================================== */
+        .gallery-section {
+            background: var(--background);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: var(--background-alt);
+            border-radius: 0;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item-title {
+            color: var(--background);
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* ===================================
+           TESTIMONIALS
+           =================================== */
+        .testimonials-section {
+            background: var(--background-alt);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--background);
+            padding: 2.5rem;
+            border-radius: 0;
+            border-left: 3px solid var(--primary-color);
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-stars {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-secondary);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .testimonial-author strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .testimonial-author span {
+            color: var(--text-light);
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        /* ===================================
+           WHY CHOOSE US
+           =================================== */
+        .why-choose-section {
+            background: var(--background);
+        }
+
+        .why-choose-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .reasons-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .reason-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .reason-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--primary-light);
+            line-height: 1;
+        }
+
+        .reason-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            font-weight: 400;
+        }
+
+        .reason-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .why-choose-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            position: sticky;
+            top: 120px;
+        }
+
+        .stat-card {
+            background: var(--background-alt);
+            padding: 2.5rem;
+            border-radius: 0;
+            text-align: center;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 992px) {
+            .why-choose-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .why-choose-stats {
+                position: static;
+            }
+        }
+
+        /* ===================================
+           LOCATION SECTION
+           =================================== */
+        .location-section {
+            background: var(--background-alt);
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .detail-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .detail-item svg {
+            color: var(--primary-color);
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .detail-item strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .detail-item p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .detail-item a {
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .detail-item a:hover {
+            color: var(--primary-dark);
+        }
+
+        .map-placeholder {
+            aspect-ratio: 1;
+            background: var(--background);
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .map-placeholder iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 992px) {
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        /* ===================================
+           CTA SECTION
+           =================================== */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--background);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .cta-title {
+            color: var(--background);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .cta-text {
+            font-size: 17px;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ===================================
+           FOOTER
+           =================================== */
+        .footer {
+            background: var(--background-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-title {
+            color: var(--background);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .footer-text {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            color: var(--background);
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-links,
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a,
+        .footer-contact li {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 0.5rem;
+        }
+
+        .footer-contact a {
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        .footer-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 0;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">KL NAILS & SPA</span>
+                    </a>
+                    <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#contact" class="btn-nav">BOOK NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Excellence in Nail Care</h1>
+                <p class="hero-subtitle">Premium nail artistry and spa treatments in the heart of Benfleet</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">BOOK APPOINTMENT</a>
+                    <a href="#services" class="btn btn-secondary">VIEW SERVICES</a>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>263 Kiln Rd, Hadleigh</span>
+                    </div>
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:07476780415">07476 780415</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <span class="section-label">Welcome to KL Nails & Spa</span>
+                    <h2 class="section-title">Your Destination for Beautiful Nails</h2>
+                    <p class="section-description">With years of expertise and a passion for perfection, we provide exceptional nail care services in a spotlessly clean, welcoming environment. Our talented team is dedicated to delivering stunning results that exceed expectations every time.</p>
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Experienced Technicians</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Premium Products</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Hygienic Environment</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>LGBTQ+ Friendly</span>
+                        </div>
+                    </div>
+                    <a href="#about" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="intro-image">
+                    <div class="image-placeholder">
+                        <img src="Images/nail-art-pink.png" alt="Beautiful nail design at KL Nails & Spa">
+                        <div class="rating-badge">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-text">4.4 Rating</div>
+                            <div class="review-count">37 Reviews</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Treatments We Offer</h2>
+                <p class="section-description">From classic manicures to intricate nail art, we offer a comprehensive range of treatments to suit every style and occasion.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gel Nails</h3>
+                    <p class="service-description">Long-lasting gel polish applications with a flawless finish. Choose from our extensive colour palette or request custom designs.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £25</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Acrylic Extensions</h3>
+                    <p class="service-description">Transform your nails with beautiful, durable acrylic extensions. Perfect for those seeking extra length and strength.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £35</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Manicure & Pedicure</h3>
+                    <p class="service-description">Indulge in our luxury manicure and pedicure treatments. Complete nail care including cuticle work and relaxing massage.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £20</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Nail Art & Design</h3>
+                    <p class="service-description">Express your creativity with our bespoke nail art services. From elegant French tips to intricate custom designs.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £5</p>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-primary">Book Your Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Nail Art Gallery</h2>
+                <p class="section-description">Browse our stunning collection of nail designs and treatments. Get inspired for your next visit!</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Images/french-tips-classic.png" alt="Classic French tip nails">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Classic French Tips</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/crystal-embellished.png" alt="Crystal embellished nail design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Crystal Embellishments</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/nail-art-tiktok.png" alt="Trending nail art design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Trendy Nail Art</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/nail-art-pink.png" alt="Pink nail art design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Pink French Design</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-outline">Book Your Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Client Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Had such a great experience here. I got gel on my natural nails with deep smile Frenchies, and I absolutely love them. The attention to detail is outstanding."</p>
+                    <div class="testimonial-author">
+                        <strong>Sophia P.</strong>
+                        <span>Local Guide</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"After several recommendations from friends, I decided to give KL Nails a try. The staff were super welcoming and made me feel right at home. Absolutely love my nails!"</p>
+                    <div class="testimonial-author">
+                        <strong>Harriet Hutson</strong>
+                        <span>Verified Client</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I've been with Anna at KL Nails for many years. The salon is always spotlessly clean and welcoming as are the staff. I'm always more than satisfied with the results."</p>
+                    <div class="testimonial-author">
+                        <strong>Janet Verney</strong>
+                        <span>Long-term Client</span>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-outline">Book Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section" id="about">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <span class="section-label">Why KL Nails & Spa</span>
+                    <h2 class="section-title">The Benfleet Standard for Nail Excellence</h2>
+                    <div class="reasons-list">
+                        <div class="reason-item">
+                            <div class="reason-number">01</div>
+                            <div class="reason-content">
+                                <h3>Expert Technicians</h3>
+                                <p>Our highly trained team brings years of experience and continuous professional development to ensure you receive the finest nail care available.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">02</div>
+                            <div class="reason-content">
+                                <h3>Impeccable Hygiene</h3>
+                                <p>We maintain the highest standards of cleanliness and sterilisation. Your safety and wellbeing are our absolute priority.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">03</div>
+                            <div class="reason-content">
+                                <h3>Premium Products</h3>
+                                <p>We exclusively use professional-grade products from leading brands to ensure long-lasting, beautiful results every time.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">04</div>
+                            <div class="reason-content">
+                                <h3>Welcoming Atmosphere</h3>
+                                <p>Enjoy a relaxing, friendly environment where everyone is welcome. We're proud to be an inclusive, LGBTQ+ friendly establishment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-choose-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4.4</div>
+                        <div class="stat-label">Star Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">37+</div>
+                        <div class="stat-label">Happy Reviews</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="contact">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <span class="section-label">Visit Us</span>
+                    <h2 class="section-title">Conveniently Located in Hadleigh</h2>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <strong>Address</strong>
+                                <p>263 Kiln Road, Hadleigh<br>Benfleet, Essex SS7 1RU</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <p>Monday - Saturday: 9:00 AM - 6:30 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:07476780415">07476 780415</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <div>
+                                <strong>Parking</strong>
+                                <p>Free parking available nearby</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel:07476780415" class="btn btn-primary">Call to Book</a>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.1!2d0.596!3d51.5547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s263%20Kiln%20Rd%2C%20Hadleigh%2C%20Benfleet%20SS7%201RU!5e0!3m2!1sen!2suk!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Experience Excellence?</h2>
+                <p class="cta-text">Book your appointment today and discover why clients trust us with their nail care.</p>
+                <div class="cta-buttons">
+                    <a href="tel:07476780415" class="btn btn-primary">Call 07476 780415</a>
+                    <a href="#services" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color: white;">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">KL NAILS & SPA</h3>
+                    <p class="footer-text">Your premier destination for exceptional nail care in Benfleet. We're dedicated to providing outstanding service in a welcoming, inclusive environment.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Gel Nails</a></li>
+                        <li><a href="#services">Acrylic Extensions</a></li>
+                        <li><a href="#services">Manicure & Pedicure</a></li>
+                        <li><a href="#services">Nail Art</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>263 Kiln Road, Hadleigh<br>Benfleet, Essex SS7 1RU</li>
+                        <li><a href="tel:07476780415">07476 780415</a></li>
+                        <li>Mon-Sat: 9:00 AM - 6:30 PM<br>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KL Nails & Spa Benfleet. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">★ 4.4 RATING</span>
+                    <span class="badge">LGBTQ+ FRIENDLY</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('navMenu').classList.remove('active');
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            header.classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            document.querySelectorAll('section[id]').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
+```
