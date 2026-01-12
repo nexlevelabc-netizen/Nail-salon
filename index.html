@@ -1,0 +1,3731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KL Nails & Spa Benfleet - Premium nail salon in Essex offering exceptional nail care services. Book your appointment today at our Hadleigh location.">
+    <meta name="keywords" content="nail salon Essex, nail spa Benfleet, manicure Hadleigh, gel nails, acrylics, nail technician Essex">
+    <title>KL Nails & Spa Benfleet | Premium Nail Salon in Essex</title>
+    <style>
+        /* Keep all the CSS the same - only change image paths */
+        :root {
+            --primary-color: #d4a574;
+            --primary-dark: #b8915f;
+            --primary-light: #e6c9a8;
+            --secondary-color: #2c2c2c;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --text-light: #999999;
+            --background: #ffffff;
+            --background-alt: #f8f8f8;
+            --background-dark: #2c2c2c;
+            --border-color: rgb(128, 128, 128);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-display: Georgia, 'Times New Roman', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 13px;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+
+        h1 {
+            font-size: clamp(3rem, 5vw, 5rem);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 4vw, 4rem);
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+
+        h3 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 400;
+            letter-spacing: 0.01em;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .section-description {
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.25rem;
+            }
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 3rem 0;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-radius: 0;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--background);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+        }
+
+        .btn-secondary:hover {
+            background: var(--background);
+            color: var(--text-primary);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--background);
+        }
+
+        .btn-nav {
+            background: var(--primary-color);
+            color: var(--background);
+            padding: 0.75rem 1.75rem;
+            border-radius: 0;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-nav:hover {
+            background: var(--primary-dark);
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 0 var(--border-color);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-sm);
+            background: var(--background);
+        }
+
+        .navigation {
+            padding: 1.5rem 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: var(--text-primary);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .nav-link {
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--text-primary);
+            position: relative;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0.5rem;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 1px;
+            background: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        @media (max-width: 992px) {
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--background);
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--shadow-lg);
+                transform: translateX(100%);
+                transition: var(--transition);
+            }
+
+            .nav-menu.active {
+                transform: translateX(0);
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+        }
+
+        /* HERO - UPDATED IMAGE PATH */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('images/salon-interior.png') center/cover no-repeat;
+            text-align: center;
+            padding: 10rem 0 6rem;
+        }
+
+        .hero::before,
+        .hero::after {
+            display: none;
+        }
+
+        .hero-overlay {
+            display: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: 17px;
+            margin-bottom: 3.5rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            display: inline-block;
+            border-radius: 2px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .hero-info {
+            display: flex;
+            gap: 3rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.75rem 1.5rem;
+            border-radius: 2px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-item svg {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 80vh;
+                padding: 8rem 0 4rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero-title,
+            .hero-subtitle {
+                padding: 0.75rem 1.5rem;
+            }
+        }
+
+        .intro-section {
+            background: var(--background);
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .intro-features {
+            display: grid;
+            gap: 1.25rem;
+            margin: 2.5rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .feature-item span {
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .feature-item svg {
+            color: var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .intro-image {
+            position: relative;
+        }
+
+        .image-placeholder {
+            aspect-ratio: 4/5;
+            background: var(--primary-light);
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rating-badge {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: 0;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .stars {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating-text {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 0.25rem;
+        }
+
+        .review-count {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        @media (max-width: 992px) {
+            .intro-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .intro-image {
+                order: -1;
+            }
+        }
+
+        .services-preview {
+            background: var(--background-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: var(--background);
+            padding: 3rem 2.5rem;
+            border-radius: 0;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: 1px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            border-radius: 0;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .service-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .service-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .section-cta {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .gallery-section {
+            background: var(--background);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: var(--background-alt);
+            border-radius: 0;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-item-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item-title {
+            color: var(--background);
+            font-size: 1.4rem;
+            font-weight: 300;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .testimonials-section {
+            background: var(--background-alt);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-card {
+            background: var(--background);
+            padding: 2.5rem;
+            border-radius: 0;
+            border-left: 3px solid var(--primary-color);
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-stars {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-secondary);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .testimonial-author strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .testimonial-author span {
+            color: var(--text-light);
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        .why-choose-section {
+            background: var(--background);
+        }
+
+        .why-choose-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .reasons-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .reason-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .reason-number {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--primary-light);
+            line-height: 1;
+        }
+
+        .reason-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            font-weight: 400;
+        }
+
+        .reason-content p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .why-choose-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            position: sticky;
+            top: 120px;
+        }
+
+        .stat-card {
+            background: var(--background-alt);
+            padding: 2.5rem;
+            border-radius: 0;
+            text-align: center;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 300;
+            color: var(--primary-color);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 992px) {
+            .why-choose-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .why-choose-stats {
+                position: static;
+            }
+        }
+
+        .location-section {
+            background: var(--background-alt);
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .location-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .detail-item {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .detail-item svg {
+            color: var(--primary-color);
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .detail-item strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .detail-item p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .detail-item a {
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .detail-item a:hover {
+            color: var(--primary-dark);
+        }
+
+        .map-placeholder {
+            aspect-ratio: 1;
+            background: var(--background);
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+
+        .map-placeholder iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 992px) {
+            .location-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: var(--background);
+            text-align: center;
+            padding: 6rem 0;
+        }
+
+        .cta-title {
+            color: var(--background);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .cta-text {
+            font-size: 17px;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer {
+            background: var(--background-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-title {
+            color: var(--background);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .footer-text {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-heading {
+            color: var(--background);
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .footer-links,
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a,
+        .footer-contact li {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            padding-left: 0.5rem;
+        }
+
+        .footer-contact a {
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        .footer-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 0;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+/* ===== CUSTOM CHATBOT STYLES ===== */
+.chatbot-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    z-index: 1001;
+}
+
+.chatbot-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    position: relative;
+    z-index: 1001; /* HIGH Z-INDEX */
+}
+
+.chatbot-toggle:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.chat-notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-container {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    width: 350px;
+    max-height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-brand h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chat-status {
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.chatbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.chatbot-close:hover {
+    transform: scale(1.2);
+}
+
+.chatbot-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 430px;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    max-height: 250px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    max-width: 85%;
+    font-size: 14px;
+    line-height: 1.4;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message.bot {
+    background: #f8f8f8;
+    border-top-left-radius: 5px;
+    align-self: flex-start;
+}
+
+.message.user {
+    background: var(--primary-color);
+    color: white;
+    border-top-right-radius: 5px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message.system {
+    background: #fff8e1;
+    border-left: 3px solid #ffc107;
+    font-size: 13px;
+    max-width: 100%;
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 0 15px 15px;
+}
+
+.quick-action {
+    background: white;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quick-action:hover {
+    background: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    background: #fafafa;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.chat-input input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(212, 165, 116, 0.1);
+}
+
+.chat-input button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.chat-input button:hover {
+    background: var(--primary-dark);
+}
+
+/* Booking Form Styles */
+.booking-form {
+    padding: 15px;
+}
+
+.form-step h5 {
+    margin-bottom: 15px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.service-options {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service-option {
+    background: white;
+    border: 2px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: var(--transition);
+}
+
+.service-option:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.service-option.active {
+    border-color: var(--primary-color);
+    background: var(--primary-light);
+}
+
+.service-option span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.service-option small {
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.datetime-selection {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.date-picker,
+.time-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.date-picker label,
+.time-picker label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.date-picker input,
+.time-picker select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.date-picker input:focus,
+.time-picker select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* ===== IMPROVED FORM NAVIGATION STYLES ===== */
+.form-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.btn-back, .btn-next, .btn-submit {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.btn-back {
+    background: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-back:hover {
+    background: #eee;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.btn-back:active {
+    transform: translateY(0);
+}
+
+.btn-next {
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-next:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(212, 165, 116, 0.3);
+}
+
+.btn-submit {
+    background: #27ae60;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-submit:hover {
+    background: #219653;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(39, 174, 96, 0.3);
+}
+
+/* Add arrow icons using pseudo-elements */
+.btn-back::before {
+    content: "←";
+    font-weight: bold;
+}
+
+.btn-next::after {
+    content: "→";
+    font-weight: bold;
+}
+
+.btn-submit::after {
+    content: "✓";
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .form-nav {
+        flex-direction: column;
+    }
+    
+    .btn-back, .btn-next, .btn-submit {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+/* Back to Chat specific button */
+.btn-back-to-chat {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-back-to-chat:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.btn-back-to-chat::before {
+    content: "←";
+    font-weight: bold;
+}
+
+/* New Chat button in header */
+#newChatBtn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+#newChatBtn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+#newChatBtn:active {
+    transform: scale(1);
+}
+
+.btn-back,
+.btn-next {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-back {
+    background: #f8f8f8;
+    color: var(--text-primary);
+    border: 1px solid #eee;
+}
+
+.btn-next {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-back:hover {
+    background: #eee;
+}
+
+.btn-next:hover {
+    background: var(--primary-dark);
+}
+
+.booking-summary {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.booking-summary div {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-summary strong {
+    color: var(--text-primary);
+}
+
+.confirmation-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-confirm,
+.btn-modify {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-confirm {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-confirm:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-modify {
+    background: #f8f8f8;
+    color: var(--text-primary);
+    border: 1px solid #eee;
+}
+
+.btn-modify:hover {
+    background: #eee;
+}
+
+.btn-confirm small {
+    font-weight: 400;
+    opacity: 0.9;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Typing indicator */
+.typing-indicator {
+    display: flex;
+    gap: 4px;
+    padding: 12px 15px;
+}
+
+.typing-indicator span {
+    width: 8px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 50%;
+    animation: typing 1.4s infinite;
+}
+
+.typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-5px); }
+}
+.voice-assistant-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.voice-assistant-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.voice-assistant-btn.listening {
+    background: #e74c3c;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+.voice-assistant-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1001; /* Higher than everything else */
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.voice-assistant-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.voice-assistant-btn.listening {
+    background: #e74c3c;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+/* ===== DEBUG STYLES - TEMPORARY ===== */
+#chatbotToggle {
+    border: 5px solid red !important;
+    background: yellow !important;
+}
+
+#voiceButton {
+    border: 5px solid blue !important;
+    background: cyan !important;
+}
+
+/* Make absolutely sure they're visible */
+#chatbotToggle, #voiceButton {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+    transform: scale(1.5) !important; /* Make them bigger so you can see them */
+}
+/* Add this to your CSS or as a style tag */
+    #voice-interface.debug-show,
+    #chat-container.debug-show {
+        display: block !important;
+        background-color: red !important;
+        border: 5px solid yellow !important;
+        z-index: 9999 !important;
+    }
+.debug-show {
+        display: block !important;
+        background-color: red !important;
+        border: 5px solid yellow !important;
+        z-index: 9999 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+/* Booking Report Styles */
+.booking-report {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.report-header h5 {
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.report-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.report-controls select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+.report-controls button {
+    padding: 8px 16px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.report-controls button:hover {
+    background: var(--primary-dark);
+}
+
+.booking-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    background: #f8f8f8;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.calendar-date {
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 14px;
+    position: relative;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar-date:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.calendar-date.selected {
+    background: var(--primary-light);
+    border-color: var(--primary-color);
+}
+
+.calendar-date.past {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.calendar-date .date-number {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.calendar-date .slots-count {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.calendar-date .no-slots {
+    font-size: 11px;
+    color: #e74c3c;
+}
+
+.calendar-date .available-slots {
+    font-size: 11px;
+    color: #27ae60;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.time-slot {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition);
+    background: white;
+}
+
+.time-slot:hover {
+    border-color: var(--primary-color);
+    background: #f9f9f9;
+}
+
+.time-slot.available {
+    background: #e8f5e9;
+    border-color: #27ae60;
+    color: #155724;
+}
+
+.time-slot.booked {
+    background: #f8d7da;
+    border-color: #e74c3c;
+    color: #721c24;
+    cursor: not-allowed;
+}
+
+.time-slot.selected {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.slot-time {
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+}
+
+.slot-status {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.report-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.report-summary h6 {
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.summary-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+/* Modal for detailed view */
+.booking-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-header h4 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal:hover {
+    color: #333;
+}
+
+.booking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.detail-value {
+    color: var(--text-primary);
+}
+
+.no-bookings {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">KL NAILS & SPA</span>
+                    </a>
+                    <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#contact" class="btn-nav">BOOK NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Excellence in Nail Care</h1>
+                <p class="hero-subtitle">Premium nail artistry and spa treatments in the heart of Benfleet</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">BOOK APPOINTMENT</a>
+                    <a href="#services" class="btn btn-secondary">VIEW SERVICES</a>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>263 Kiln Rd, Hadleigh</span>
+                    </div>
+                    <div class="info-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:07476780415">07476 780415</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <span class="section-label">Welcome to KL Nails & Spa</span>
+                    <h2 class="section-title">Your Destination for Beautiful Nails</h2>
+                    <p class="section-description">With years of expertise and a passion for perfection, we provide exceptional nail care services in a spotlessly clean, welcoming environment. Our talented team is dedicated to delivering stunning results that exceed expectations every time.</p>
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Experienced Technicians</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Premium Products</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Hygienic Environment</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>LGBTQ+ Friendly</span>
+                        </div>
+                    </div>
+                    <a href="#about" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="intro-image">
+                    <div class="image-placeholder">
+                        <!-- UPDATED PATH -->
+                        <img src="images/nail-art-pink.png" alt="Beautiful nail design at KL Nails & Spa">
+                        <div class="rating-badge">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-text">4.4 Rating</div>
+                            <div class="review-count">37 Reviews</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Treatments We Offer</h2>
+                <p class="section-description">From classic manicures to intricate nail art, we offer a comprehensive range of treatments to suit every style and occasion.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gel Nails</h3>
+                    <p class="service-description">Long-lasting gel polish applications with a flawless finish. Choose from our extensive colour palette or request custom designs.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £25</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Acrylic Extensions</h3>
+                    <p class="service-description">Transform your nails with beautiful, durable acrylic extensions. Perfect for those seeking extra length and strength.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £35</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Manicure & Pedicure</h3>
+                    <p class="service-description">Indulge in our luxury manicure and pedicure treatments. Complete nail care including cuticle work and relaxing massage.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £20</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Nail Art & Design</h3>
+                    <p class="service-description">Express your creativity with our bespoke nail art services. From elegant French tips to intricate custom designs.</p>
+                    <p style="margin-top: 1rem; color: var(--primary-color); font-weight: 600; font-size: 15px;">From £5</p>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-primary">Book Your Service</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Nail Art Gallery</h2>
+                <p class="section-description">Browse our stunning collection of nail designs and treatments. Get inspired for your next visit!</p>
+            </div>
+            <div class="gallery-grid">
+                <!-- UPDATED PATHS -->
+                <div class="gallery-item">
+                    <img src="images/french-tips-classic.png" alt="Classic French tip nails">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Classic French Tips</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/crystal-embellished.png" alt="Crystal embellished nail design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Crystal Embellishments</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/nail-art-tiktok.png" alt="Trending nail art design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Trendy Nail Art</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/nail-art-pink.png" alt="Pink nail art design">
+                    <div class="gallery-item-overlay">
+                        <h3 class="gallery-item-title">Pink French Design</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-outline">Book Your Design</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Client Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Had such a great experience here. I got gel on my natural nails with deep smile Frenchies, and I absolutely love them. The attention to detail is outstanding."</p>
+                    <div class="testimonial-author">
+                        <strong>Sophia P.</strong>
+                        <span>Local Guide</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"After several recommendations from friends, I decided to give KL Nails a try. The staff were super welcoming and made me feel right at home. Absolutely love my nails!"</p>
+                    <div class="testimonial-author">
+                        <strong>Harriet Hutson</strong>
+                        <span>Verified Client</span>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"I've been with Anna at KL Nails for many years. The salon is always spotlessly clean and welcoming as are the staff. I'm always more than satisfied with the results."</p>
+                    <div class="testimonial-author">
+                        <strong>Janet Verney</strong>
+                        <span>Long-term Client</span>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta">
+                <a href="#contact" class="btn btn-outline">Book Your Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-section" id="about">
+        <div class="container">
+            <div class="why-choose-content">
+                <div class="why-choose-text">
+                    <span class="section-label">Why KL Nails & Spa</span>
+                    <h2 class="section-title">The Benfleet Standard for Nail Excellence</h2>
+                    <div class="reasons-list">
+                        <div class="reason-item">
+                            <div class="reason-number">01</div>
+                            <div class="reason-content">
+                                <h3>Expert Technicians</h3>
+                                <p>Our highly trained team brings years of experience and continuous professional development to ensure you receive the finest nail care available.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">02</div>
+                            <div class="reason-content">
+                                <h3>Impeccable Hygiene</h3>
+                                <p>We maintain the highest standards of cleanliness and sterilisation. Your safety and wellbeing are our absolute priority.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">03</div>
+                            <div class="reason-content">
+                                <h3>Premium Products</h3>
+                                <p>We exclusively use professional-grade products from leading brands to ensure long-lasting, beautiful results every time.</p>
+                            </div>
+                        </div>
+                        <div class="reason-item">
+                            <div class="reason-number">04</div>
+                            <div class="reason-content">
+                                <h3>Welcoming Atmosphere</h3>
+                                <p>Enjoy a relaxing, friendly environment where everyone is welcome. We're proud to be an inclusive, LGBTQ+ friendly establishment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-choose-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">4.4</div>
+                        <div class="stat-label">Star Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">37+</div>
+                        <div class="stat-label">Happy Reviews</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Clients Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section" id="contact">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <span class="section-label">Visit Us</span>
+                    <h2 class="section-title">Conveniently Located in Hadleigh</h2>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <div>
+                                <strong>Address</strong>
+                                <p>263 Kiln Road, Hadleigh<br>Benfleet, Essex SS7 1RU</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <p>Monday - Saturday: 9:00 AM - 6:30 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:07476780415">07476 780415</a></p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <div>
+                                <strong>Parking</strong>
+                                <p>Free parking available nearby</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="tel:07476780415" class="btn btn-primary">Call to Book</a>
+                </div>
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.1!2d0.596!3d51.5547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s263%20Kiln%20Rd%2C%20Hadleigh%2C%20Benfleet%20SS7%201RU!5e0!3m2!1sen!2suk!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Experience Excellence?</h2>
+                <p class="cta-text">Book your appointment today and discover why clients trust us with their nail care.</p>
+                <div class="cta-buttons">
+                    <a href="tel:07476780415" class="btn btn-primary">Call 07476 780415</a>
+                    <a href="#services" class="btn btn-secondary" style="background: rgba(255,255,255,0.2); color: white;">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">KL NAILS & SPA</h3>
+                    <p class="footer-text">Your premier destination for exceptional nail care in Benfleet. We're dedicated to providing outstanding service in a welcoming, inclusive environment.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Gel Nails</a></li>
+                        <li><a href="#services">Acrylic Extensions</a></li>
+                        <li><a href="#services">Manicure & Pedicure</a></li>
+                        <li><a href="#services">Nail Art</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>263 Kiln Road, Hadleigh<br>Benfleet, Essex SS7 1RU</li>
+                        <li><a href="tel:07476780415">07476 780415</a></li>
+                        <li>Mon-Sat: 9:00 AM - 6:30 PM<br>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KL Nails & Spa Benfleet. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">★ 4.4 RATING</span>
+                    <span class="badge">LGBTQ+ FRIENDLY</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+<div id="chatbotWidget" class="chatbot-widget">
+    <button id="chatbotToggle" class="chatbot-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <span class="chat-notification" id="chatNotification">1</span>
+    </button>
+    
+    <div class="chatbot-container" id="chatbotContainer" style="display: none;">
+        <div class="chatbot-header">
+            <div class="chatbot-brand">
+                <h4>KL Nails Assistant</h4>
+                <span class="chat-status">Online</span>
+            </div>
+            <button id="chatbotClose" class="chatbot-close">&times;</button>
+        </div>
+        
+        <div class="chatbot-body">
+            <div class="chat-messages" id="chatMessages"></div>
+            
+            <!-- Booking Form -->
+            <div class="booking-form" id="bookingForm" style="display: none;">
+                <div class="form-step" id="step1">
+                    <h5>Select Service</h5>
+                    <div class="service-options">
+                        <button class="service-option" data-service="gel-nails" data-price="25">
+                            <span>Gel Nails</span>
+                            <small>From £25</small>
+                        </button>
+                        <button class="service-option" data-service="acrylic-extensions" data-price="35">
+                            <span>Acrylic Extensions</span>
+                            <small>From £35</small>
+                        </button>
+                        <button class="service-option" data-service="manicure-pedicure" data-price="20">
+                            <span>Manicure & Pedicure</span>
+                            <small>From £20</small>
+                        </button>
+                        <button class="service-option" data-service="nail-art" data-price="5">
+                            <span>Nail Art & Design</span>
+                            <small>From £5</small>
+                        </button>
+                    </div>
+                    <button class="btn-back" onclick="goBackToChat()">Back to Chat</button>
+                </div>
+                
+                <div class="form-step" id="step2" style="display: none;">
+                    <h5>Select Date & Time</h5>
+                    <div class="datetime-selection">
+                        <div class="date-picker">
+                            <label>Date:</label>
+                            <input type="date" id="bookingDate" min="">
+                        </div>
+                        <div class="time-picker">
+                            <label>Time:</label>
+                            <select id="bookingTime">
+                                <option value="">Select time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-nav">
+                        <button class="btn-back" onclick="previousBookingStep()">Back</button>
+                        <button class="btn-next" onclick="nextBookingStep()">Next</button>
+                    </div>
+                </div>
+                
+                <div class="form-step" id="step3" style="display: none;">
+                    <h5>Your Details</h5>
+                    <div class="contact-form">
+                        <input type="text" id="clientName" placeholder="Your full name" required>
+                        <input type="email" id="clientEmail" placeholder="Email address" required>
+                        <input type="tel" id="clientPhone" placeholder="Phone number" required>
+                        <textarea id="clientNotes" placeholder="Special requests or notes..." rows="2"></textarea>
+                    </div>
+                    <div class="form-nav">
+                        <button class="btn-back" onclick="previousBookingStep()">Back</button>
+                        <button class="btn-next" onclick="submitBooking()">Submit Booking</button>
+                    </div>
+                </div>
+                
+                <div class="form-step" id="step4" style="display: none;">
+                    <h5>Booking Summary</h5>
+                    <div class="booking-summary" id="bookingSummary">
+                        <!-- Will be filled by JavaScript -->
+                    </div>
+                    <div class="confirmation-options">
+                        <button class="btn-confirm" onclick="confirmBooking()">
+                            <span>Confirm & Book Now</span>
+                            <small>We'll call you to confirm</small>
+                        </button>
+                        <button class="btn-modify" onclick="modifyBooking()">Modify Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="quick-actions" id="quickActions">
+                <button class="quick-action" data-action="book">📅 Book Appointment</button>
+                <button class="quick-action" data-action="prices">💰 Check Prices</button>
+                <button class="quick-action" data-action="hours">🕐 Opening Hours</button>
+                <button class="quick-action" data-action="services">💅 Our Services</button>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your question...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- VOICE BUTTON -->
+<button id="voiceButton" class="voice-assistant-btn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+        <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+        <line x1="12" y1="19" x2="12" y2="23"></line>
+        <line x1="8" y1="23" x2="16" y2="23"></line>
+    </svg>
+</button>
+<!-- Chatbot Interface -->
+<div id="chat-container" style="display: none; position: fixed; bottom: 80px; right: 20px; width: 350px; height: 500px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); z-index: 1000;">
+    <div style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); padding: 20px; border-radius: 15px 15px 0 0; display: flex; justify-content: space-between; align-items: center;">
+        <h3 style="margin: 0; color: white; font-weight: 600;">Nail Salon Assistant</h3>
+        <button id="close-chat" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer;">✕</button>
+    </div>
+    
+    <div id="chat-messages" style="height: 350px; padding: 15px; overflow-y: auto; background: #f9f9f9;">
+        <div style="background: #e3f2fd; padding: 10px 15px; border-radius: 15px; margin-bottom: 10px; max-width: 80%;">
+            <p style="margin: 0;">Hello! I'm your nail salon assistant. How can I help you today? 😊</p>
+        </div>
+    </div>
+    
+    <div style="padding: 15px; border-top: 1px solid #eee;">
+        <div style="display: flex; gap: 10px;">
+            <input type="text" id="chat-input" placeholder="Type your message..." style="flex: 1; padding: 12px 15px; border: 1px solid #ddd; border-radius: 25px; font-size: 14px; outline: none;">
+            <button id="send-message" style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); color: white; border: none; border-radius: 25px; padding: 0 25px; cursor: pointer; font-weight: 600;">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- Voice Assistant Interface -->
+<div id="voice-interface" style="display: none; position: fixed; bottom: 80px; left: 20px; width: 300px; background: white; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.2); z-index: 1000; padding: 20px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: white; font-size: 24px;">🎤</span>
+        </div>
+        <h3 style="margin: 0 0 10px; color: #333;">Voice Assistant</h3>
+        <p style="margin: 0; color: #666; font-size: 14px;">Click to speak, I'll help you!</p>
+    </div>
+    
+    <div style="text-align: center;">
+        <button id="voice-toggle" style="width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%); border: none; cursor: pointer; margin-bottom: 15px; font-size: 24px; color: white;">
+            🎤
+        </button>
+        <p id="voice-status" style="margin: 0; color: #666; font-size: 14px;">Ready to listen...</p>
+    </div>
+    
+    <div id="voice-response" style="margin-top: 20px; padding: 15px; background: #f5f5f5; border-radius: 10px; display: none;">
+        <p style="margin: 0; color: #333;">Response will appear here...</p>
+    </div>
+    
+    <button id="close-voice" style="position: absolute; top: 15px; right: 15px; background: none; border: none; color: #999; font-size: 18px; cursor: pointer;">✕</button>
+</div>
+<script>
+    // ===== DEBUG MODE =====
+    console.log("=== STARTING DEBUG ===");
+    
+    // Use window.onload to ensure ALL elements are loaded
+    window.addEventListener('load', function() {
+        console.log("1. Page fully loaded");
+        
+        // ===== FIND ELEMENTS =====
+        const voiceButton = document.getElementById('voiceButton');
+        const chatButton = document.getElementById('chatbotToggle');
+        const voiceInterface = document.getElementById('voice-interface');
+        const chatContainer = document.getElementById('chatbotContainer');
+        
+        console.log("2. Voice button found:", !!voiceButton);
+        console.log("3. Chat button found:", !!chatButton);
+        console.log("4. Voice interface found:", !!voiceInterface);
+        console.log("5. Chat container found:", !!chatContainer);
+        
+        // ===== INITIAL SETUP - Hide interfaces =====
+        if (voiceInterface) {
+            voiceInterface.style.display = 'none';
+            console.log("✅ Voice interface hidden initially");
+        }
+        
+        if (chatContainer) {
+            chatContainer.style.display = 'none';
+            console.log("✅ Chat container hidden initially");
+        }
+        
+        // ===== VOICE BUTTON CLICK =====
+        if (voiceButton && voiceInterface) {
+            console.log("6. Adding click to voice button");
+            voiceButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                console.log("🎤 VOICE BUTTON CLICKED!");
+                
+                // Toggle voice interface
+                if (voiceInterface.style.display === 'none' || voiceInterface.style.display === '') {
+                    voiceInterface.style.display = 'block';
+                    voiceInterface.style.zIndex = '9999';
+                    console.log("✅ Voice interface SHOWN");
+                    
+                    // Hide chat container if it's open
+                    if (chatContainer && chatContainer.style.display === 'block') {
+                        chatContainer.style.display = 'none';
+                        console.log("✅ Chat container hidden");
+                    }
+                } else {
+                    voiceInterface.style.display = 'none';
+                    console.log("✅ Voice interface HIDDEN");
+                }
+            });
+        } else {
+            console.error("❌ Voice button or interface not found!");
+        }
+        
+        // ===== CHAT BUTTON CLICK =====
+                // ===== CHAT BUTTON CLICK - FIXED VERSION =====
+        if (chatButton && chatContainer) {
+            console.log("7. Adding click to chat button - FIXED");
+            
+            let isChatOpen = false;
+            
+            chatButton.addEventListener('click', function(event) {
+                event.stopPropagation();
+                console.log("💬 CHAT BUTTON CLICKED!");
+                
+                if (!isChatOpen) {
+                    // OPEN CHAT
+                    chatContainer.style.display = 'block';
+                    chatContainer.style.zIndex = '9998';
+                    isChatOpen = true;
+                    console.log("✅ Chat opened");
+                    
+                    // Check if chat is empty (new conversation)
+                    const chatMessages = document.getElementById('chatMessages');
+                    if (chatMessages && chatMessages.children.length === 0) {
+                        // Add welcome message for new chat
+                        setTimeout(() => {
+                            addBotMessage("Hello! I'm your KL Nails Assistant. How can I help you today? 😊");
+                        }, 300);
+                    }
+                    
+                    // Hide voice interface
+                    if (voiceInterface && voiceInterface.style.display === 'block') {
+                        voiceInterface.style.display = 'none';
+                        console.log("✅ Voice interface hidden");
+                    }
+                } else {
+                    // CLOSE CHAT
+                    chatContainer.style.display = 'none';
+                    isChatOpen = false;
+                    console.log("✅ Chat closed");
+                    
+                    // CLEAR ALL MESSAGES when closing
+                    const chatMessages = document.getElementById('chatMessages');
+                    if (chatMessages) {
+                        chatMessages.innerHTML = '';
+                    }
+                    
+                    // Clear input
+                    const chatInput = document.getElementById('chatInput');
+                    if (chatInput) chatInput.value = '';
+                    
+                    // Reset booking form
+                    resetBookingForm();
+                    
+                    console.log("✅ Chat messages cleared");
+                }
+            });
+        } else {
+            console.error("❌ Chat button or container not found!");
+        }
+        
+        // ===== CLOSE BUTTONS =====
+                // ===== CLOSE BUTTONS =====
+        // Close voice interface
+        document.getElementById('close-voice')?.addEventListener('click', function() {
+            if (voiceInterface) {
+                voiceInterface.style.display = 'none';
+                console.log("✅ Voice interface closed via X button");
+            }
+        });
+        
+        // Close chat container - WITH MESSAGE CLEARING
+        document.getElementById('chatbotClose')?.addEventListener('click', function() {
+            if (chatContainer) {
+                chatContainer.style.display = 'none';
+                console.log("✅ Chat container closed via X button");
+                
+                // Update chat open state
+                if (typeof isChatOpen !== 'undefined') {
+                    isChatOpen = false;
+                }
+                
+                // CLEAR ALL MESSAGES
+                const chatMessages = document.getElementById('chatMessages');
+                if (chatMessages) {
+                    chatMessages.innerHTML = '';
+                }
+                
+                // Clear input
+                const chatInput = document.getElementById('chatInput');
+                if (chatInput) chatInput.value = '';
+                
+                // Reset booking form
+                resetBookingForm();
+                
+                console.log("✅ Chat messages cleared via X button");
+            }
+        });
+        
+        // ===== VOICE FUNCTIONALITY =====
+        let isListening = false;
+        const voiceToggle = document.getElementById('voice-toggle');
+        const voiceStatus = document.getElementById('voice-status');
+        const voiceResponse = document.getElementById('voice-response');
+        
+        voiceToggle?.addEventListener('click', function() {
+            if (!isListening) {
+                isListening = true;
+                voiceToggle.style.background = 'linear-gradient(135deg, #ff6b6b 0%, #ffa8a8 100%)';
+                voiceStatus.textContent = 'Listening... Speak now!';
+                voiceResponse.style.display = 'block';
+                voiceResponse.innerHTML = '<p style="margin: 0; color: #333;">Listening...</p>';
+                
+                setTimeout(() => {
+                    voiceStatus.textContent = 'Processing...';
+                    voiceResponse.innerHTML = '<p style="margin: 0; color: #333;">I heard: "Hello, I need help with nail designs"</p>';
+                    
+                    setTimeout(() => {
+                        voiceStatus.textContent = 'Speaking response...';
+                        voiceResponse.innerHTML += '<p style="margin: 10px 0 0; color: #333;">I recommend trying our French tips or crystal embellished designs! 💅</p>';
+                        
+                        setTimeout(() => {
+                            isListening = false;
+                            voiceToggle.style.background = 'linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)';
+                            voiceStatus.textContent = 'Ready to listen...';
+                            voiceResponse.style.display = 'none';
+                        }, 3000);
+                    }, 1000);
+                }, 2000);
+            }
+        });
+        
+        // ===== CHATBOT INTERNAL FUNCTIONALITY =====
+        
+        console.log("8. Setting up chatbot internal functionality...");
+        
+        // Get chatbot elements
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendMessageBtn = document.getElementById('sendMessage');
+        const quickActions = document.querySelectorAll('.quick-action');
+        const bookingForm = document.getElementById('bookingForm');
+        const serviceOptions = document.querySelectorAll('.service-option');
+        
+        console.log("Chat messages element:", !!chatMessages);
+        console.log("Chat input element:", !!chatInput);
+        console.log("Quick actions found:", quickActions.length);
+        
+        // Initial chatbot message
+        setTimeout(() => {
+            if (chatMessages) {
+                addBotMessage("Hello! I'm your KL Nails Assistant. How can I help you today? 😊");
+            }
+        }, 500);
+        
+        // Function to add bot messages
+        function addBotMessage(text) {
+            if (!chatMessages) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message bot';
+            messageDiv.innerHTML = `<p>${text}</p>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Function to add user messages
+        function addUserMessage(text) {
+            if (!chatMessages) return;
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message user';
+            messageDiv.innerHTML = `<p>${text}</p>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        // Send message button
+        if (sendMessageBtn && chatInput) {
+            sendMessageBtn.addEventListener('click', function() {
+                const message = chatInput.value.trim();
+                if (message) {
+                    addUserMessage(message);
+                    chatInput.value = '';
+                    
+                    // Show typing indicator
+                    showTypingIndicator();
+                    
+                    // Bot response after delay
+                    setTimeout(() => {
+                        removeTypingIndicator();
+                        handleUserMessage(message.toLowerCase());
+                    }, 1000);
+                }
+            });
+        }
+        
+        // Enter key support
+        if (chatInput) {
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter' && sendMessageBtn) {
+                    sendMessageBtn.click();
+                }
+            });
+        }
+        
+        // Quick actions buttons
+        quickActions.forEach(button => {
+            button.addEventListener('click', function() {
+                const action = this.getAttribute('data-action');
+                addUserMessage(this.textContent);
+                
+                showTypingIndicator();
+                
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    handleQuickAction(action);
+                }, 800);
+            });
+        });
+        
+        // Handle quick actions
+        function handleQuickAction(action) {
+            switch(action) {
+                case 'book':
+                    addBotMessage("Great! Let's book your appointment. Choose a service:");
+                    showBookingForm();
+                    break;
+                case 'prices':
+                    addBotMessage("Here are our prices:<br>" +
+                        "• Gel Nails: From £25<br>" +
+                        "• Acrylic Extensions: From £35<br>" +
+                        "• Manicure & Pedicure: From £20<br>" +
+                        "• Nail Art: From £5");
+                    break;
+                case 'hours':
+                    addBotMessage("We're open:<br>" +
+                        "Monday - Saturday: 9:00 AM - 6:30 PM<br>" +
+                        "Sunday: Closed");
+                    break;
+                case 'services':
+                    addBotMessage("We offer:<br>" +
+                        "• Gel Nails<br>" +
+                        "• Acrylic Extensions<br>" +
+                        "• Manicure & Pedicure<br>" +
+                        "• Nail Art & Design<br>" +
+                        "• Spa Treatments");
+                    break;
+            }
+        }
+        
+        // Handle regular messages
+        function handleUserMessage(message) {
+            if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+                addBotMessage("Hello! How can I assist you today? You can also use the quick buttons below.");
+            } else if (message.includes('price') || message.includes('cost') || message.includes('how much')) {
+                addBotMessage("Here are our prices:<br>" +
+                    "• Gel Nails: From £25<br>" +
+                    "• Acrylic Extensions: From £35<br>" +
+                    "• Manicure & Pedicure: From £20<br>" +
+                    "• Nail Art: From £5");
+            } else if (message.includes('time') || message.includes('open') || message.includes('hour')) {
+                addBotMessage("We're open:<br>" +
+                    "Monday - Saturday: 9:00 AM - 6:30 PM<br>" +
+                    "Sunday: Closed");
+            } else if (message.includes('book') || message.includes('appointment') || message.includes('schedule')) {
+                addBotMessage("Great! Let's book your appointment. Choose a service:");
+                showBookingForm();
+            } else if (message.includes('service') || message.includes('offer')) {
+                addBotMessage("We offer:<br>" +
+                    "• Gel Nails<br>" +
+                    "• Acrylic Extensions<br>" +
+                    "• Manicure & Pedicure<br>" +
+                    "• Nail Art & Design<br>" +
+                    "• Spa Treatments");
+            } else if (message.includes('location') || message.includes('address') || message.includes('where')) {
+                addBotMessage("We're located at:<br>" +
+                    "263 Kiln Road, Hadleigh<br>" +
+                    "Benfleet, Essex SS7 1RU");
+            } else if (message.includes('phone') || message.includes('call') || message.includes('contact')) {
+                addBotMessage("You can call us at: <strong>07476 780415</strong>");
+            } else {
+                addBotMessage("I can help you with:<br>" +
+                    "• Booking appointments<br>" +
+                    "• Checking prices<br>" +
+                    "• Viewing services<br>" +
+                    "• Opening hours<br><br>" +
+                    "Or use the quick buttons below!");
+            }
+        }
+        
+        // Show booking form
+        function showBookingForm() {
+            if (!bookingForm) return;
+            document.getElementById('quickActions').style.display = 'none';
+            bookingForm.style.display = 'block';
+            document.getElementById('step1').style.display = 'block';
+            
+            // Set minimum date for booking (today)
+            const today = new Date().toISOString().split('T')[0];
+            const dateInput = document.getElementById('bookingDate');
+            if (dateInput) dateInput.min = today;
+        }
+        
+        // Service option selection
+        if (serviceOptions.length > 0) {
+            serviceOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove active class from all options
+                    serviceOptions.forEach(opt => opt.classList.remove('active'));
+                    // Add active class to clicked option
+                    this.classList.add('active');
+                    
+                    // Store selected service
+                    window.selectedService = this.getAttribute('data-service');
+                    window.selectedServicePrice = this.getAttribute('data-price');
+                    window.selectedServiceName = this.querySelector('span').textContent;
+                    
+                    // Move to next step after a delay
+                    setTimeout(() => {
+                        nextBookingStep();
+                    }, 500);
+                });
+            });
+        }
+        
+        // Typing indicator functions
+        function showTypingIndicator() {
+            if (!chatMessages) return;
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'typing-indicator';
+            typingDiv.id = 'typingIndicator';
+            typingDiv.innerHTML = `
+                <span></span>
+                <span></span>
+                <span></span>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+        
+        function removeTypingIndicator() {
+            const typingIndicator = document.getElementById('typingIndicator');
+            if (typingIndicator) {
+                typingIndicator.remove();
+            }
+        }
+        
+        // Booking form functions
+        window.goBackToChat = function() {
+            if (!bookingForm) return;
+            bookingForm.style.display = 'none';
+            const quickActionsDiv = document.getElementById('quickActions');
+            if (quickActionsDiv) quickActionsDiv.style.display = 'grid';
+            addBotMessage("What else can I help you with?");
+            currentStep = 1; // Reset to step 1
+        };
+        
+        let currentStep = 1;
+        
+        window.nextBookingStep = function() {
+            if (currentStep === 1) {
+                // Validate service selection
+                if (!window.selectedService) {
+                    addBotMessage("Please select a service first!");
+                    return;
+                }
+                document.getElementById('step1').style.display = 'none';
+                document.getElementById('step2').style.display = 'block';
+                currentStep = 2;
+            } else if (currentStep === 2) {
+                // Validate date and time
+                const dateInput = document.getElementById('bookingDate');
+                const timeSelect = document.getElementById('bookingTime');
+                if (!dateInput || !timeSelect) return;
+                
+                const date = dateInput.value;
+                const time = timeSelect.value;
+                
+                if (!date || !time) {
+                    addBotMessage("Please select both date and time!");
+                    return;
+                }
+                
+                window.selectedDate = date;
+                window.selectedTime = time;
+                
+                document.getElementById('step2').style.display = 'none';
+                document.getElementById('step3').style.display = 'block';
+                currentStep = 3;
+            }
+        };
+        
+        window.previousBookingStep = function() {
+            if (currentStep === 2) {
+                document.getElementById('step2').style.display = 'none';
+                document.getElementById('step1').style.display = 'block';
+                currentStep = 1;
+            } else if (currentStep === 3) {
+                document.getElementById('step3').style.display = 'none';
+                document.getElementById('step2').style.display = 'block';
+                currentStep = 2;
+            } else if (currentStep === 4) {
+                document.getElementById('step4').style.display = 'none';
+                document.getElementById('step3').style.display = 'block';
+                currentStep = 3;
+            }
+        };
+        
+        window.submitBooking = function() {
+            // Validate contact details
+            const name = document.getElementById('clientName')?.value;
+            const email = document.getElementById('clientEmail')?.value;
+            const phone = document.getElementById('clientPhone')?.value;
+            
+            if (!name || !email || !phone) {
+                addBotMessage("Please fill in all your details!");
+                return;
+            }
+            
+            window.clientName = name;
+            window.clientEmail = email;
+            window.clientPhone = phone;
+            window.clientNotes = document.getElementById('clientNotes')?.value || '';
+            
+            // Show summary
+            document.getElementById('step3').style.display = 'none';
+            document.getElementById('step4').style.display = 'block';
+            
+            // Fill summary
+            const summaryDiv = document.getElementById('bookingSummary');
+            if (summaryDiv) {
+                summaryDiv.innerHTML = `
+                    <div><strong>Service:</strong> ${window.selectedServiceName}</div>
+                    <div><strong>Price:</strong> From £${window.selectedServicePrice}</div>
+                    <div><strong>Date:</strong> ${formatDate(window.selectedDate)}</div>
+                    <div><strong>Time:</strong> ${window.selectedTime}</div>
+                    <div><strong>Name:</strong> ${window.clientName}</div>
+                    <div><strong>Email:</strong> ${window.clientEmail}</div>
+                    <div><strong>Phone:</strong> ${window.clientPhone}</div>
+                    ${window.clientNotes ? `<div><strong>Notes:</strong> ${window.clientNotes}</div>` : ''}
+                `;
+            }
+            
+            currentStep = 4;
+        };
+        
+        window.confirmBooking = function() {
+            addBotMessage(`✅ Booking confirmed!<br><br>
+                We've received your booking for:<br>
+                • <strong>${window.selectedServiceName}</strong><br>
+                • <strong>${formatDate(window.selectedDate)} at ${window.selectedTime}</strong><br><br>
+                We'll call you at <strong>${window.clientPhone}</strong> to confirm. Thank you!`);
+            
+            // Reset form
+            if (bookingForm) bookingForm.style.display = 'none';
+            const quickActionsDiv = document.getElementById('quickActions');
+            if (quickActionsDiv) quickActionsDiv.style.display = 'grid';
+            
+            // Reset all steps
+            document.getElementById('step1').style.display = 'block';
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById('step3').style.display = 'none';
+            document.getElementById('step4').style.display = 'none';
+            
+            // Clear form
+            const dateInput = document.getElementById('bookingDate');
+            const timeSelect = document.getElementById('bookingTime');
+            const nameInput = document.getElementById('clientName');
+            const emailInput = document.getElementById('clientEmail');
+            const phoneInput = document.getElementById('clientPhone');
+            const notesInput = document.getElementById('clientNotes');
+            
+            if (dateInput) dateInput.value = '';
+            if (timeSelect) timeSelect.value = '';
+            if (nameInput) nameInput.value = '';
+            if (emailInput) emailInput.value = '';
+            if (phoneInput) phoneInput.value = '';
+            if (notesInput) notesInput.value = '';
+            
+            serviceOptions.forEach(opt => opt.classList.remove('active'));
+            
+            // Clear stored data
+            window.selectedService = null;
+            window.selectedServicePrice = null;
+            window.selectedServiceName = null;
+            window.selectedDate = null;
+            window.selectedTime = null;
+            window.clientName = null;
+            window.clientEmail = null;
+            window.clientPhone = null;
+            window.clientNotes = null;
+            
+            currentStep = 1;
+        };
+        
+        window.modifyBooking = function() {
+            document.getElementById('step4').style.display = 'none';
+            document.getElementById('step3').style.display = 'block';
+            currentStep = 3;
+        };
+        
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-GB', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+        
+        // ===== ADMIN BOOKING REPORT SYSTEM =====
+        console.log("9. Setting up admin booking report system...");
+        
+        // Booking data storage
+        let bookingsData = [];
+        
+        // Function to add new bookings to the system
+        function addBookingToReport(bookingData) {
+            const newBooking = {
+                id: bookingsData.length + 1,
+                date: bookingData.date,
+                time: bookingData.time,
+                service: bookingData.service,
+                client: bookingData.clientName,
+                phone: bookingData.clientPhone,
+                email: bookingData.clientEmail || '',
+                notes: bookingData.clientNotes || '',
+                status: 'new',
+                timestamp: new Date().toISOString()
+            };
+            
+            bookingsData.push(newBooking);
+            console.log("📊 Booking added to admin report:", newBooking);
+            
+            // Auto-send report if you have 5+ bookings
+            if (bookingsData.length >= 5) {
+                sendDailyReport();
+            }
+            
+            return newBooking;
+        }
+        
+        // Function to generate report text
+        function generateReportText() {
+            if (bookingsData.length === 0) {
+                return "📊 KL NAILS BOOKING REPORT\n\nNo bookings today.";
+            }
+            
+            let report = `📊 KL NAILS & SPA - BOOKING REPORT\n`;
+            report += `Date: ${new Date().toLocaleDateString('en-GB')}\n`;
+            report += `Total Bookings: ${bookingsData.length}\n`;
+            report += `========================\n\n`;
+            
+            // Group by date
+            const bookingsByDate = {};
+            bookingsData.forEach(booking => {
+                if (!bookingsByDate[booking.date]) {
+                    bookingsByDate[booking.date] = [];
+                }
+                bookingsByDate[booking.date].push(booking);
+            });
+            
+            // Add bookings by date
+            Object.keys(bookingsByDate).sort().forEach(date => {
+                const dateObj = new Date(date);
+                const formattedDate = dateObj.toLocaleDateString('en-GB', { 
+                    weekday: 'long', 
+                    day: 'numeric', 
+                    month: 'long' 
+                });
+                
+                report += `📅 ${formattedDate}:\n`;
+                
+                bookingsByDate[date].forEach(booking => {
+                    report += `  ⏰ ${booking.time} - ${booking.service}\n`;
+                    report += `     👤 ${booking.client}\n`;
+                    report += `     📞 ${booking.phone}\n`;
+                    if (booking.email) report += `     📧 ${booking.email}\n`;
+                    if (booking.notes) report += `     📝 Notes: ${booking.notes}\n`;
+                    report += `     🔹 Status: ${booking.status}\n\n`;
+                });
+            });
+            
+            // Add summary
+            report += `========================\n`;
+            report += `📈 SUMMARY:\n`;
+            report += `• Total Bookings: ${bookingsData.length}\n`;
+            
+            const servicesCount = {};
+            bookingsData.forEach(b => {
+                servicesCount[b.service] = (servicesCount[b.service] || 0) + 1;
+            });
+            
+            Object.keys(servicesCount).forEach(service => {
+                report += `• ${service}: ${servicesCount[service]} bookings\n`;
+            });
+            
+            // Add revenue estimate
+            const servicePrices = {
+                "Gel Nails": 25,
+                "Acrylic Extensions": 35,
+                "Manicure & Pedicure": 20,
+                "Nail Art & Design": 5
+            };
+            
+            let estimatedRevenue = 0;
+            bookingsData.forEach(b => {
+                estimatedRevenue += servicePrices[b.service] || 25;
+            });
+            
+            report += `• Estimated Revenue: £${estimatedRevenue}\n`;
+            
+            return report;
+        }
+        
+        // Function to send report via WhatsApp
+        function sendReportViaWhatsApp() {
+            const reportText = generateReportText();
+            const phoneNumber = "447476780415"; // CHANGE THIS: Your WhatsApp number with country code
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(reportText)}`;
+            
+            // Open WhatsApp in new tab
+            window.open(whatsappUrl, '_blank');
+            
+            console.log("📤 WhatsApp report ready to send");
+            return "✅ WhatsApp opened with booking report. Just click send!";
+        }
+        
+        // Function to send report via SMS
+        function sendReportViaSMS() {
+            const reportText = generateReportText();
+            const phoneNumber = "07476780415"; // CHANGE THIS: Your phone number
+            
+            // For mobile devices
+            if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                const smsUrl = `sms:${phoneNumber}?body=${encodeURIComponent(reportText)}`;
+                window.location.href = smsUrl;
+            } else {
+                // For desktop - show text to copy
+                alert(`📱 SMS REPORT READY\n\nCopy this text and send to ${phoneNumber}:\n\n${reportText}\n\n📋 Text has been copied to clipboard!`);
+                navigator.clipboard.writeText(reportText);
+            }
+            
+            console.log("📤 SMS report generated");
+            return "✅ SMS ready to send! Text copied to clipboard.";
+        }
+        
+        // Function to send report via Email
+        function sendReportViaEmail() {
+            const reportText = generateReportText();
+            const subject = `KL Nails Booking Report - ${new Date().toLocaleDateString('en-GB')}`;
+            const email = "your-email@example.com"; // CHANGE THIS: Your email
+            const body = encodeURIComponent(reportText);
+            const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+            
+            window.location.href = mailtoUrl;
+            
+            console.log("📤 Email report generated");
+            return "✅ Email client opened with report. Just click send!";
+        }
+        
+        // Create hidden admin button
+        function createAdminButton() {
+            // Check if button already exists
+            if (document.getElementById('adminReportBtn')) return;
+            
+            const adminBtn = document.createElement('button');
+            adminBtn.id = 'adminReportBtn';
+            adminBtn.innerHTML = '👑';
+            adminBtn.title = 'Admin Report';
+            adminBtn.style.cssText = `
+                position: fixed;
+                bottom: 100px;
+                right: 30px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                border: none;
+                cursor: pointer;
+                z-index: 10000;
+                font-size: 24px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+            `;
+            
+            // Hover effect
+            adminBtn.onmouseenter = function() {
+                this.style.transform = 'scale(1.1)';
+                this.style.boxShadow = '0 6px 20px rgba(0,0,0,0.4)';
+            };
+            
+            adminBtn.onmouseleave = function() {
+                this.style.transform = 'scale(1)';
+                this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.3)';
+            };
+            
+            // Click event
+            adminBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                showAdminPanel();
+            });
+            
+            document.body.appendChild(adminBtn);
+            console.log("✅ Admin button created (floating 👑 at bottom right)");
+        }
+        
+        // Show admin panel
+        function showAdminPanel() {
+            // Remove existing panel if any
+            const existingPanel = document.getElementById('adminPanel');
+            if (existingPanel) {
+                existingPanel.remove();
+                return;
+            }
+            
+            const panelHTML = `
+                <div id="adminPanel" style="
+                    position: fixed;
+                    bottom: 160px;
+                    right: 30px;
+                    background: white;
+                    border-radius: 10px;
+                    padding: 20px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+                    z-index: 10001;
+                    min-width: 280px;
+                    border: 1px solid #e0e0e0;
+                ">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h4 style="margin: 0; color: #333; font-weight: 600;">📊 Admin Report</h4>
+                        <button onclick="closeAdminPanel()" style="
+                            background: none;
+                            border: none;
+                            font-size: 20px;
+                            color: #999;
+                            cursor: pointer;
+                            padding: 0;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">&times;</button>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 12px; border-radius: 8px; margin-bottom: 20px;">
+                        <p style="margin: 0; font-size: 14px; color: #666; display: flex; align-items: center; gap: 8px;">
+                            <span style="background: #667eea; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px;">${bookingsData.length}</span>
+                            <span>Total Bookings Today</span>
+                        </p>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <button onclick="sendWhatsAppReport()" style="
+                            padding: 14px;
+                            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <span style="font-size: 18px;">📱</span>
+                            <span>Send WhatsApp Report</span>
+                        </button>
+                        
+                        <button onclick="sendSMSReport()" style="
+                            padding: 14px;
+                            background: linear-gradient(135deg, #007AFF 0%, #0056CC 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <span style="font-size: 18px;">💬</span>
+                            <span>Send SMS Report</span>
+                        </button>
+                        
+                        <button onclick="sendEmailReport()" style="
+                            padding: 14px;
+                            background: linear-gradient(135deg, #EA4335 0%, #D14836 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <span style="font-size: 18px;">📧</span>
+                            <span>Send Email Report</span>
+                        </button>
+                        
+                        <button onclick="viewReport()" style="
+                            padding: 14px;
+                            background: linear-gradient(135deg, #6c5ce7 0%, #5b4fcf 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <span style="font-size: 18px;">👁️</span>
+                            <span>View Report</span>
+                        </button>
+                        
+                        <button onclick="clearReport()" style="
+                            padding: 14px;
+                            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 14px;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        ">
+                            <span style="font-size: 18px;">🗑️</span>
+                            <span>Clear All Data</span>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            const panelDiv = document.createElement('div');
+            panelDiv.innerHTML = panelHTML;
+            document.body.appendChild(panelDiv.firstElementChild);
+        }
+        
+        // Admin functions (callable from buttons)
+        window.sendWhatsAppReport = function() {
+            const result = sendReportViaWhatsApp();
+            alert(result);
+            closeAdminPanel();
+        };
+        
+        window.sendSMSReport = function() {
+            const result = sendReportViaSMS();
+            alert(result);
+            closeAdminPanel();
+        };
+        
+        window.sendEmailReport = function() {
+            const result = sendReportViaEmail();
+            alert(result);
+            closeAdminPanel();
+        };
+        
+        window.viewReport = function() {
+            const reportText = generateReportText();
+            alert(`📊 KL NAILS BOOKING REPORT\n\n${reportText}\n\n📋 Report copied to clipboard!`);
+            navigator.clipboard.writeText(reportText);
+        };
+        
+        window.clearReport = function() {
+            if (confirm("⚠️ CLEAR ALL BOOKING DATA?\n\nThis will delete all stored bookings and cannot be undone.\n\nPress OK to clear, Cancel to keep data.")) {
+                bookingsData = [];
+                alert("✅ All booking data cleared!");
+                closeAdminPanel();
+            }
+        };
+        
+        window.closeAdminPanel = function() {
+            const panel = document.getElementById('adminPanel');
+            if (panel) panel.remove();
+        };
+        
+        // Close admin panel when clicking outside
+        document.addEventListener('click', function(e) {
+            const adminPanel = document.getElementById('adminPanel');
+            const adminBtn = document.getElementById('adminReportBtn');
+            
+            if (adminPanel && 
+                !adminPanel.contains(e.target) && 
+                adminBtn && !adminBtn.contains(e.target)) {
+                closeAdminPanel();
+            }
+        });
+        
+        // Modify the confirmBooking function to add to report
+        const originalConfirmBooking = window.confirmBooking;
+        window.confirmBooking = function() {
+            // Call original function
+            originalConfirmBooking();
+            
+            // Add to admin report
+            if (window.selectedDate && window.selectedTime && window.selectedServiceName && window.clientName && window.clientPhone) {
+                const newBooking = addBookingToReport({
+                    date: window.selectedDate,
+                    time: window.selectedTime,
+                    service: window.selectedServiceName,
+                    clientName: window.clientName,
+                    clientPhone: window.clientPhone,
+                    clientEmail: window.clientEmail || '',
+                    clientNotes: window.clientNotes || ''
+                });
+                
+                console.log("✅ Added to admin report:", newBooking);
+            }
+        };
+        
+        function checkForAdminAccess() {
+            // Get the URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const adminKey = urlParams.get('admin');
+            
+            // Your secret key - change this to something only you know
+            const SECRET_ADMIN_KEY = 'klnails123';
+            
+            // Check if the correct admin key is in the URL
+            if (adminKey === SECRET_ADMIN_KEY) {
+                createAdminButton();
+                console.log("✅ Admin access granted via URL parameter");
+                
+                // Optional: Remove the parameter from URL (keeps it secret)
+                // window.history.replaceState({}, document.title, window.location.pathname);
+            } else {
+                console.log("🔒 Admin access not granted - no valid URL parameter");
+                console.log("ℹ️ To access admin, add ?admin=klnails123 to your URL");
+            }
+        }
+        
+        // Check for admin access after page loads
+        setTimeout(checkForAdminAccess, 1000);
+        
+        // ===== NAVIGATION FUNCTIONS =====
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('navMenu').classList.remove('active');
+                }
+            });
+        });
+        
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            header.classList.toggle('scrolled', window.scrollY > 100);
+        });
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            document.querySelectorAll('section[id]').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        console.log("=== SETUP COMPLETE ===");
+        console.log("🎤 Voice button at bottom right should work");
+        console.log("💬 Chat button next to it should work");
+        console.log("👑 Admin button will appear at bottom right");
+    });
+    
+    console.log("=== DEBUG SCRIPT LOADED ===");
+        // ===== SAVE BOOKINGS TO ADMIN DASHBOARD =====
+        
+        // Function to save booking to localStorage (for admin dashboard)
+        function saveBookingToAdmin(bookingData) {
+            // Get existing bookings or start empty array
+            const existingBookings = JSON.parse(localStorage.getItem('klNailsBookings')) || [];
+            
+            // Create new booking object
+            const newBooking = {
+                id: existingBookings.length + 1,
+                date: bookingData.date,
+                time: bookingData.time,
+                service: bookingData.service,
+                client: bookingData.clientName,
+                phone: bookingData.clientPhone,
+                email: bookingData.clientEmail || '',
+                notes: bookingData.clientNotes || '',
+                status: 'pending', // New bookings are pending until confirmed
+                createdAt: new Date().toISOString()
+            };
+            
+            // Add to array and save
+            existingBookings.push(newBooking);
+            localStorage.setItem('klNailsBookings', JSON.stringify(existingBookings));
+            
+            console.log("✅ Booking saved to admin system:", newBooking);
+            
+            // Optional: Also try to send to admin dashboard if it's open
+            if (window.opener && typeof window.opener.receiveBooking === 'function') {
+                window.opener.receiveBooking(newBooking);
+            }
+            
+            return newBooking;
+        }
+        
+        // Update the confirmBooking function to save to admin
+        const originalConfirmBooking = window.confirmBooking;
+        window.confirmBooking = function() {
+            // Call original function
+            originalConfirmBooking();
+            
+            // Save to admin system
+            if (window.selectedDate && window.selectedTime && window.selectedServiceName && window.clientName && window.clientPhone) {
+                saveBookingToAdmin({
+                    date: window.selectedDate,
+                    time: window.selectedTime,
+                    service: window.selectedServiceName,
+                    clientName: window.clientName,
+                    clientPhone: window.clientPhone,
+                    clientEmail: window.clientEmail || '',
+                    clientNotes: window.clientNotes || ''
+                });
+            }
+        };
+</script>
+</body>
+</html>
+```
